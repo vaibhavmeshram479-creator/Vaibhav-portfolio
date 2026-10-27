@@ -1,0 +1,343 @@
+ html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Vaibhav | Developer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1220;
+            color: #f1f5f9;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            background: #111b2e;
+            border-bottom: 1px solid #263449;
+            padding: 18px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo {
+            color: #67e8f9;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #67e8f9;
+        }
+
+        .hero {
+            padding: 75px 0 65px;
+        }
+
+        .tag {
+            color: #67e8f9;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(34px, 8vw, 54px);
+            line-height: 1.2;
+            margin: 14px 0;
+        }
+
+        .highlight {
+            color: #67e8f9;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 18px 0 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0891b2;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 5px 8px 5px 0;
+        }
+
+        .btn:hover {
+            background: #0e7490;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #67e8f9;
+            color: #67e8f9;
+        }
+
+        section {
+            padding: 45px 0;
+        }
+
+        .section-title {
+            font-size:e 29px;
+            margin-bottom: 20px;
+        }
+
+        .section-text {
+            color: #cbd5e1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 22px;
+        }
+
+        .card {
+            background: #111b2e;
+            border: 1px solid #263449;
+            border-radius: 12px;
+            padding: 22px;
+        }
+
+        .card h3 {
+            color: #67e8f9;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #1e293b;
+            color: #bae6fd;
+            border: 1px solid #334155;
+            border-radius: 20px;
+            padding: 7px 13px;
+            margin: 5px 4px 5px 0;
+            font-size: 14px;
+        }
+
+        .contact-box {
+            background: #111b2e;
+            border: 1px solid #263449;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        footer {
+            text-align: center;
+            color: #94a3b8;
+            border-top: 1px solid #263449;
+            padding: 22px 10px;
+            margin-top: 25px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 10px;
+                display: inline-block;
+            }
+
+            .hero {
+                padding: 50px 0 35px;
+            }
+
+            section {
+                padding: 32px 0;
+            }
+
+            .section-title {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">VAIBHAV.DEV</div>
+
+                <div>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="tag">HELLO, WORLD! I'M</div>
+
+                <h1>
+                    Vaibhav<br>
+                    <span class="highlight">Meshram.</span>
+                </h1>
+
+                <h2>Aspiring Software Engineer</h2>
+
+                <p>
+                    I am learning web development and programming.
+                    I enjoy solving problems, building projects
+                    and improving my technical skills every day.
+                </p>
+
+                <a class="btn" href="#projects">
+                    Explore My Projects
+                </a>
+
+                <a class="btn btn-outline" href="#contact">
+                    Contact Me
+                </a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+
+                <p class="section-text">
+                    I am a student preparing for my future in
+                    Computer Applications and Information Technology.
+                    I am currently building my foundation in HTML,
+                    CSS and programming.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+
+                <p class="section-text">
+                    Skills I am learning and practising:
+                </p>
+
+                <div>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript - Learning</span>
+                    <span class="skill">Python - Beginner</span>
+                    <span class="skill">Problem Solving</span>
+                    <span class="skill">English Communication</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>Personal Portfolio</h3>
+                        <p>
+                            My first responsive website made using
+                            HTML and CSS to introduce myself and
+                            showcase my learning journey.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>My Future Project</h3>
+                        <p>
+                            I am practising programming and plan
+                            to build more useful projects as my
+                            skills improve.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="contact-box">
+                    <p class="section-text">
+                        Thanks for visiting my portfolio!
+                        You can add your professional contact
+                        details here when you are ready.
+                    </p>
+
+                    <a class="btn"
+                       href="mailto:your-vaibhavmeshram927@gmail.com">
+                        Email Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Vaibhav Meshram.
+            Built with HTML and CSS.
+        </p>
+        <p>Always learning. Always building.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+8
